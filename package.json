@@ -1,0 +1,48 @@
+{
+  "name": "mathshow",
+  "version": "0.1.1",
+  "description": "Show LaTeX math from any CLI agent. Opens a KaTeX preview in the browser.",
+  "type": "module",
+  "bin": {
+    "mathshow": "./bin/mathshow.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "validate:skills": "node scripts/validate-skills.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "katex": "^0.18.4"
+  },
+  "license": "MIT",
+  "author": "Imran Gadzhiev",
+  "homepage": "https://github.com/iCodeCraft/mathshow#readme",
+  "bugs": {
+    "url": "https://github.com/iCodeCraft/mathshow/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iCodeCraft/mathshow.git"
+  },
+  "keywords": [
+    "latex",
+    "katex",
+    "math",
+    "cli",
+    "agent",
+    "skills",
+    "agent-skills",
+    "cursor",
+    "claude-code"
+  ]
+}

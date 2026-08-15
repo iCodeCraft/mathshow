@@ -1,0 +1,43 @@
+name: Feature / skill proposal
+description: Propose a CLI feature or a new skill (one clear job).
+title: "[proposal]: "
+labels: ["proposal"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - CLI feature
+        - New skill
+        - Skill improvement
+        - Docs
+    validations:
+      required: true
+  - type: textarea
+    id: job
+    attributes:
+      label: One job
+      description: What single problem does this solve?
+      placeholder: e.g. Optional terminal graphics mode for Kitty/iTerm users.
+    validations:
+      required: true
+  - type: textarea
+    id: when
+    attributes:
+      label: When should it apply?
+      description: Routing keywords / situations (for skills) or CLI flags (for CLI).
+    validations:
+      required: true
+  - type: textarea
+    id: when_not
+    attributes:
+      label: When must it NOT apply?
+      description: Escape hatches — CI, headless, user asked for X, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: sketch
+    attributes:
+      label: Sketch (optional)
+      description: MUST/NEVER rules, flag names, or API sketch.

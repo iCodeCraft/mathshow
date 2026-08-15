@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Agent Skills standard
+    url: https://agentskills.io
+    about: Spec for SKILL.md layout and how agents load skills.
+  - name: skills CLI
+    url: https://github.com/vercel-labs/skills
+    about: Install, list, and remove skills across agents.
+  - name: KaTeX
+    url: https://katex.org
+    about: The renderer used by the mathshow preview.

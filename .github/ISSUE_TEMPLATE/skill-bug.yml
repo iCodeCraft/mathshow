@@ -1,0 +1,54 @@
+name: Skill bug
+description: show-math over-fired, under-fired, or produced a bad outcome.
+title: "[skill]: "
+labels: ["bug", "skill"]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: Skill
+      options:
+        - show-math
+        - unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: What went wrong?
+      options:
+        - Over-fired — skill applied when it shouldn't have
+        - Under-fired — skill should have applied but didn't
+        - Bad outcome — skill applied, guidance was wrong or harmful
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: What did you expect?
+      placeholder: e.g. agent should have run mathshow for the integral…
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro
+      description: Agent, model (if known), prompt, and relevant snippet.
+      placeholder: |
+        Agent: Cursor / Claude Code / …
+        Prompt: …
+        Notes: …
+    validations:
+      required: true
+  - type: input
+    id: agent
+    attributes:
+      label: Agent
+      placeholder: Cursor, Claude Code, Codex, …

@@ -1,0 +1,22 @@
+{
+  "name": "mathshow",
+  "displayName": "mathshow",
+  "version": "0.1.0",
+  "description": "Show LaTeX math from Cursor agents. Runs the mathshow CLI and opens a KaTeX browser preview — no raw $...$ as the only view.",
+  "author": {
+    "name": "iCodeCraft"
+  },
+  "homepage": "https://github.com/iCodeCraft/mathshow",
+  "repository": "https://github.com/iCodeCraft/mathshow",
+  "license": "MIT",
+  "keywords": [
+    "latex",
+    "katex",
+    "math",
+    "preview",
+    "skills",
+    "agent-skills"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": ["skills/"]
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="mathshow">
+  <rect width="128" height="128" rx="28" fill="#0A0A0A"/>
+  <text
+    x="64"
+    y="55"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Georgia, 'Times New Roman', Times, serif"
+    font-size="88"
+    font-weight="700"
+    fill="#F5F5F5"
+  >∑</text>
+</svg>

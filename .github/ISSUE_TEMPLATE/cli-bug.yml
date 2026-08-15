@@ -1,0 +1,41 @@
+name: CLI bug
+description: mathshow CLI misbehaves (parse, preview, open, extract).
+title: "[cli]: "
+labels: ["bug", "cli"]
+body:
+  - type: dropdown
+    id: mode
+    attributes:
+      label: What went wrong?
+      options:
+        - Wrong / missing formulas extracted
+        - Preview HTML broken or KaTeX error
+        - Browser did not open (when it should)
+        - CLI crashed / bad exit code
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro
+      description: Exact command, Node version, OS.
+      placeholder: |
+        node -v:
+        OS:
+        Command: npx --yes mathshow -- '...'
+        Output:
+    validations:
+      required: true
